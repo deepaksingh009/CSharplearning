@@ -23,3 +23,10 @@ this is an instance of the current object. With a static method, there is no cur
 It's not really a constraint, but the entire point of a method being static.
 
 
+We dont use static keyword with interface,struct,indexer.
+
+Bascially we use static keyword:-
+1.Whenever we dont want to share same data across the application.
+2.In term's of performance,it work very fast because we don't use new keyword.whenever we use new keyword it will take some space in cpu so 
+it will take time in processing when we create new instance using new keyword.
+
