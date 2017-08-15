@@ -26,7 +26,20 @@ It's not really a constraint, but the entire point of a method being static.
 We dont use static keyword with interface,struct,indexer.
 
 Bascially we use static keyword:-
-1.Whenever we dont want to share same data across the application.
+1.Whenever we want to share same data across the application.
 2.In term's of performance,it work very fast because we don't use new keyword.whenever we use new keyword it will take some space in cpu so 
 it will take time in processing when we create new instance using new keyword.
+3.we cannot inherit any static class.
+4.we cannot use this keyword inside static class.
+5.we can create only static constructor.
+6.When we use the static keyword before a class name, we specify that the class will only have static member variables and methods.
+7.static classes are sealed by default, which means they cannot be inherited further
+
+Why we use static class?
+
+Static classes are used in such cases where we need some utility functions and Properties. 
+Utility functions are those functions which are very common in some software and everyone in that particular software is making 
+use of those functions. so it does not make sense every time to create an object for such a class which is being used time to 
+time by many programmers. You can take example of Built in Console Class of C#.
+
 
