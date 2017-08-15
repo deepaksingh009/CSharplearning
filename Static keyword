@@ -7,3 +7,19 @@ If you're unsure of whether or not the value will change, but you don't want oth
 If you need a field to be a property of a type, and not a property of an instance of that type, use static.
 A const value is also implicitly static.
 
+
+
+Why keyword 'this' cannot be used in a static method?
+
+Because this points to an instance of the class, in the static method you don't have an instance.
+
+The this keyword refers to the current instance of the class. Static member functions do not have a this pointer
+You'll notice the definition of a static member is
+
+Use the static modifier to declare a static member, which belongs to the type itself rather than to a specific object
+Which is why this has nothing to point to.
+
+this is an instance of the current object. With a static method, there is no current object, and as such, this doesn't exist.
+It's not really a constraint, but the entire point of a method being static.
+
+
