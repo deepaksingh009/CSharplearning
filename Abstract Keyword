@@ -1,6 +1,6 @@
 Abstract class featurs:
 1.An abstract class cannot be instantiated.
-For Example
+For Example:-
 
 public abstract class Abstract
 	{
@@ -15,3 +15,33 @@ public abstract class Abstract
 
 
 	}
+
+There are different types to call Non-Abstract methods in the Abstract Class. 
+ 
+Following are some ways: 
+Create an abstract class like below and add non-abstract method:
+public abstract class AbsClass  
+{  
+   public void display()  
+   {  
+   }  
+}  
+Create a normal class like below:
+public class Derived : AbsAnother  
+{  
+}  
+Now Create an object for Derived class then we can able call the non abstract method of abstract class.
+Derived obj = new Derived();  
+bj.dislay();  
+Create a static method in an abstract class like below:
+public abstract class AbsStatic  
+{  
+   public abstract void Display();  
+   public static void GetEmployee()  
+   {  
+   }  
+}  
+And call the method like below:
+AbsStatic.GetEmployee();   
+
+
