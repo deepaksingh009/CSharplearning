@@ -1,0 +1,17 @@
+Abstract class featurs:
+1.An abstract class cannot be instantiated.
+For Example
+
+public abstract class Abstract
+	{
+		public virtual void newmethod()
+		{
+
+		}
+	}
+	public class abstactclass:Abstract
+	{
+		Abstract obj=new Abstract(); //Error:Cannot create an instance of the abstract class or interface 'Abstract'.
+
+
+	}
