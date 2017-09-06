@@ -33,7 +33,8 @@ it will take time in processing when we create new instance using new keyword.
 4.we cannot use this keyword inside static class.
 5.we can create only static constructor.
 6.When we use the static keyword before a class name, we specify that the class will only have static member variables and methods.
-7.static classes are sealed by default, which means they cannot be inherited further
+7.static classes are sealed by default, which means they cannot be inherited further.
+8.We cannot create instance of static class.
 
 Why we use static class?
 
